@@ -1,0 +1,151 @@
+/*Conceitos de box-model no CSS*/
+/*Resetando medida padrão do CSS*/
+body {
+  /*margin é o espaço para fora do preenchimento interno*/
+  margin: 0;
+  /*
+  preenchimento da caixa
+  padding: 8px;
+  */
+  font-family: 'Open Sans', sans-serif;
+
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  /*estamos falando para que toda area visivel disponivel seja vista por dispositivos moveis e desktop*/
+  /*em uma visualização minima, tenha 100viewport height*/
+  min-height: 100vh;
+}
+
+
+.page {
+  width: 1000px;
+  /*margin auto desconsidera em cima e em baixo, deixando centralizado
+  a largura*/
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+/*trabalhando com display flex, dizemos ao html que vamos trabalhar 
+uma caixa AO LADO da outra, não uma por cima e outra em baixo*
+Flex direction é a direção que vamos trabalhar com as caixas, o flex altera os elementos dentro
+da caixa
+Justify-content significa como está justificado dentro do elemento ao conteudo - space around vai colocar
+os elementos separados em um espaço perfeito, calculado de um elemento proximo
+ao outro
+Space-evenly é espaços constantes
+display flex vem por padrão o row
+a aplicação do flex é sempre em um eixo só main x*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+#logo {
+  position: absolute; /* Define a posição absoluta para o logotipo */
+}
+
+/*list-style:none diz para tirar os pontinhos da lista
+os espaços de um elemento da lista para o outro é o gap que é disponivel quando usamos display gap*/
+ul {
+  display:flex;
+  gap: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*tirando o sublinhado do link */
+a {
+  color: #1f1534;
+  text-decoration: none;
+}
+
+ul li a {
+  opacity: 1;
+}
+
+/*quando o mouse estiver por cima do menu
+pseudo classe*/
+ul li a:hover {
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  /*centralizando os elementos dentro da caixa */
+  align-items: center;
+  /*justificando os elementos dentro da flex, com espaço entre eles*/
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: 'Mulish', sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  color: #1f1534;
+  font-weight: normal;
+
+  /*quebrando a linha do texto*/
+  width: 490px;
+}
+
+h1 span {
+  color: #89c5cc;
+  font-weight: bold;
+}
+
+section p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7d7987;
+
+  margin: 40px 0;
+}
+
+button {
+  color: white;
+  /*caixa alta*/
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+
+  /*tirando a cor padrão do botão*/
+  background: #69b99d;
+  border: 0;
+  /*valor para top - laterais - bottom*/
+  padding: 14px 32px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  /*espaço entre o logo e o texto do botão*/
+  gap: 10px;
+  /*dá pra aplicar top right- top left - bottom right - bottom left */
+  border-radius: 4px;
+
+  /*trocando o cursor do mouse para mãozinha*/
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4ea788;
+}
+
+footer {
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+#balls {
+  position: fixed;
+  /*colocando o svg das bolinhas no canto inferior direito*/
+  bottom: 0;
+  right: 0;
+}

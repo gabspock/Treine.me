@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">		
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treine me</title>
+
+		<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+		<!-- A11y fala sobre acessibilidade-->
+		<!-- W3S Fala de uma forma mais fácil-->
+		<!--Refaturação é mudar algo no codigo, mas não pode interferir na questão final, quando olhamos as alterações
+		não ficou tão bacana, então refaturamos algo interno sem estragar o que está funcionando-->
+
+		<!--Como div não tem significado, serve para ajustar as coisas em caixas
+		dai damos importancia para a div quando colocamos a classe page-->
+    <div class="page">
+
+			<nav>
+				<a href="#"></a>
+				<img id="logo" src="/assets/logo.svg" alt="Treine.me">
+
+				<!--Nav é a tag semantica para os menus no site-->
+					<!--ol é lista ordenada, segue uma ordem-->
+					<!--ul é lista não ordenada, só tem pontinhos-->
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Sobre</a></li>
+						<li><a href="#">Treinar</a></li>
+				</ul>
+		</nav>
+
+		<!--main é o conteudo principal da pagina-->
+    <main>
+
+			<!--vamos usar a section (sessão do h1) para separar os textos-->
+			<!--section é uma caixa que também usamos para agrupar os textos-->
+			<!--como só temos uma section, então não precisa de classe. mas se fossemos usar
+			precisaria ter-->
+			<section class="text">
+				<h1>Treinos <span>exclusivos</span> para você!</h1>
+
+				<p>
+					Nós criamos treinos <strong>exclusívos e únicos para você.</strong> <br>
+					Invista no seu corpo e <strong>tenha muito mais performance</strong> e qualidade de vida.
+				</p>
+
+				<button>
+					<img src="/assets/whatsapp 1.png" alt="icone do whatsapp">
+					Comece já
+				</button>
+			</section>
+
+			<img src="/assets/fitness-jump.png" alt="Desenho de uma mulher pulando corda">
+
+		</main>
+
+    <footer>
+			fale concosco no instagram
+			<a href="https://instagram.com/treineme" target="_blank">@treine.me</a>
+		</footer>
+
+		</div>
+
+		<img id="balls" src="/assets/balls-decoration.svg" alt="Bolinhas decorativas verdes no canto inferior direito da página">
+
+</body>
+</html>
